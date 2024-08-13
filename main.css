@@ -1,0 +1,456 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: green;
+}
+header
+{
+    border: 2px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+.content
+{
+    height: 0px;
+}
+
+#gameName
+{
+    color: aqua;
+    text-align: center;
+    font-size: x-small;
+    animation: text infinite 0.5s;
+}
+@keyframes text {
+    5% {
+        color: blue;
+        transition: ease;
+
+    }
+    10%
+    {
+        color: red;
+        transition: ease;
+    }
+    15%
+    {  
+        color: rgb(47, 13, 13);
+        transition: ease;
+   
+    }
+    20%
+    {
+        color:lightblue;
+        transition: ease;
+   
+    }
+    25%
+    {
+        color:palevioletred;
+        transition: ease;
+   
+    }
+    30%
+    {
+        color: rgb(187, 225, 126);
+        transition: ease;
+   
+    }
+    35%
+    {
+        color: rgb(131, 219, 231);
+        transition: ease;
+   
+    }
+    40%
+    {
+        color: rgb(189, 157, 30);
+        transition: ease;
+   
+    }
+    45%
+    {
+        color: rgb(141, 26, 172);
+        transition: ease;
+   
+    }
+    50%
+    {
+        color: rgb(225, 126, 126);
+        transition: ease;
+   
+    }
+    55%
+    {
+        color: rgb(172, 24, 213);
+        transition: ease;
+   
+    }
+    60%
+    {
+        color: rgb(176, 131, 24);
+        transition: ease;
+   
+    }
+    65%
+    {
+        color: rgb(4, 255, 217);
+        transition: ease;
+   
+    }
+    70%
+    {
+        color: rgb(157, 255, 0);
+        transition: ease;
+   
+    }
+}
+#score-board
+{
+    border: 2px solid rgb(146, 18, 18);
+    box-sizing: border-box;
+}
+#score
+{
+    font-size: xx-small;
+    text-align: right;
+    margin-right: 40px;
+}
+#ball-1
+{
+   width:40px;
+   height: 40px;
+   margin: 1px 1px;
+   background-color: blue;
+   border-radius: 50%;
+   animation: move infinite 4s;
+   
+}
+@keyframes move {
+  
+    10%
+    {
+        transform: rotate(100deg,100deg);
+        margin-left: 20%;
+        box-shadow: none;
+    }
+    20%
+    {  
+       
+         transform:rotate(150deg,150deg);
+         margin-left: 40%;
+
+   
+    }
+    30%
+    {
+        
+        transform:rotate(200deg,200deg);
+        margin-left: 60%;
+    }
+    40%
+    {   transform:rotate(260deg,260deg);
+        margin-left: 80%;
+    }
+    50%
+    {
+        transform:rotate(360deg,360deg);
+        margin-left: 90%;
+   
+    }
+     60%
+    {
+        
+        transform:rotate(-300deg,-300deg);
+        margin-right: 20%;
+   
+    }
+    70%
+    {
+        
+       
+       
+        transform:rotate(-260deg,-260deg);
+        margin-right: 40%;
+   
+    }
+    80%
+    {
+        transform:rotate(-180deg,-180deg);
+        margin-right: 60%;
+   
+   
+    } 
+    90%
+    {
+        transform:rotate(-100deg,-100deg);
+        margin-right: 80%;
+   
+   
+    } 
+    100%
+    {
+        transform:rotate(0deg,0deg);
+        margin-right: 90%;
+    }
+
+
+}
+#ball-2
+{
+   width:40px;
+   height: 40px;
+   margin: 1px 1px;
+   background-color: rgb(0, 0, 0);
+   border-radius: 50%;
+   animation: moving infinite 6s;
+   margin: 2% 0%;
+   
+}
+@keyframes moving {
+  
+    10%
+    {
+        transform: rotate(110deg,110deg);
+        margin-left: 20%;
+        box-shadow: none;
+    }
+    20%
+    {  
+       
+         transform:rotate(150deg,150deg);
+         margin-left: 40%;
+
+   
+    }
+    30%
+    {
+        
+        transform:rotate(200deg,200deg);
+        margin-left: 60%;
+    }
+    40%
+    {   transform:rotate(280deg,280deg);
+        margin-left: 80%;
+    }
+    50%
+    {
+        transform:rotate(360deg,360deg);
+        margin-left: 90%;
+   
+    }
+     60%
+    {
+        
+        transform:rotate(-300deg,-300deg);
+        margin-right: 20%;
+   
+    }
+    70%
+    {
+        
+       
+       
+        transform:rotate(-260deg,-260deg);
+        margin-right: 40%;
+   
+    }
+    80%
+    {
+        transform:rotate(-180deg,-180deg);
+        margin-right: 60%;
+   
+   
+    } 
+    90%
+    {
+        transform:rotate(-100deg,-100deg);
+        margin-right: 80%;
+   
+   
+    } 
+    100%
+    {
+        transform:rotate(0deg,0deg);
+        margin-right: 90%;
+    }
+
+
+}
+
+#ball-3
+{
+   width:40px;
+   height: 40px;
+   margin: 1px 1px;
+   background-color: rgb(242, 250, 0);
+   border-radius: 50%;
+   animation: ball infinite 5s;
+   margin: 2% 0%;
+   float: right;
+   
+}
+@keyframes ball {
+  
+    10%
+    {
+        transform: rotate(120deg,120deg);
+        margin-right: 20%;
+        
+    }
+    20%
+    {  
+       
+         transform:rotate(140deg,140deg);
+         margin-right: 40%;
+
+   
+    }
+    30%
+    {
+        
+        transform:rotate(200deg,200deg);
+        margin-right: 60%;
+    }
+    40%
+    {   transform:rotate(260deg,260deg);
+        margin-right: 80%;
+    }
+    50%
+    {
+        transform:rotate(360deg,360deg);
+        margin-right: 90%;
+   
+    }
+     60%
+    {
+        
+        transform:rotate(-2800deg,-280deg);
+        margin-left: 20%;
+   
+    }
+    70%
+    {
+        
+       
+       
+        transform:rotate(-240deg,-240deg);
+        margin-left: 40%;
+   
+    }
+    80%
+    {
+        transform:rotate(-180deg,-180deg);
+        margin-left: 60%;
+   
+   
+    } 
+    90%
+    {
+        transform:rotate(-90deg,-90deg);
+        margin-left: 80%;
+   
+   
+    } 
+    100%
+    {
+        transform:rotate(0deg,0deg);
+        margin-left: 90%;
+    }
+
+
+}
+#ball-4
+{
+   width:40px;
+   height: 40px;
+   margin: 1px 1px;
+   background-color: rgb(255, 0, 0);
+   border-radius: 50%;
+   animation: motion infinite 8s;
+   margin: 4% 0%;
+  
+   
+}
+@keyframes motion {
+  
+    10%
+    {
+        transform: rotate(120deg,120deg);
+        margin-left: 20%;
+       
+    }
+    20%
+    {  
+       
+         transform:rotate(140deg,140deg);
+         margin-left: 40%;
+
+   
+    }
+    30%
+    {
+        
+        transform:rotate(200deg,200deg);
+        margin-left: 60%;
+    }
+    40%
+    {   transform:rotate(260deg,260deg);
+        margin-left: 80%;
+    }
+    50%
+    {
+        transform:rotate(360deg,360deg);
+        margin-left: 90%;
+   
+    }
+     60%
+    {
+        
+        transform:rotate(-2800deg,-280deg);
+        margin-right: 20%;
+   
+    }
+    70%
+    {
+        
+       
+       
+        transform:rotate(-240deg,-240deg);
+        margin-right: 40%;
+   
+    }
+    80%
+    {
+        transform:rotate(-180deg,-180deg);
+        margin-right: 60%;
+   
+   
+    } 
+    90%
+    {
+        transform:rotate(-90deg,-90deg);
+        margin-right: 80%;
+   
+   
+    } 
+    100%
+    {
+        transform:rotate(0deg,0deg);
+        margin-right: 90%;
+    }
+}
+#original-ball
+{
+    width:10px;
+    height: 10px;
+    margin: 1px 1px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+   
+   
+}
